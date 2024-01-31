@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './css/Navbar.css';
 
 const Navbar = () => {
+  const [isDropdownActive, setDropdownActive] = useState(false);
+
   const scrollToSection = (id) => {
     document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    // Close the dropdown when a link is clicked
+    setDropdownActive(false);
+  };
+
+  const toggleDropdown = () => {
+    setDropdownActive(!isDropdownActive);
   };
 
   return (
@@ -12,7 +20,7 @@ const Navbar = () => {
         <div className="navbar-brand">
           <span>Mohammed Farag.</span>
         </div>
-        <div className="navbar-links">
+        <div className={`navbar-links ${isDropdownActive ? 'active' : ''}`}>
           <button onClick={() => scrollToSection('home')}>Home</button>
           <button onClick={() => scrollToSection('education')}>Education</button>
           <button onClick={() => scrollToSection('skills')}>Skills</button>
@@ -21,6 +29,9 @@ const Navbar = () => {
           <button onClick={() => scrollToSection('achievements')}>Achievements</button>
           <button onClick={() => scrollToSection('extracurriculars')}>Extracurriculars</button>
         </div>
+        <button className="navbar-dropdown-toggle" onClick={toggleDropdown}>
+          ☰
+        </button>
       </div>
     </nav>
   );
