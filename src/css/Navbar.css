@@ -49,6 +49,14 @@
     display: none;
   }
 
+  .navbar-brand {
+    font-size: 14px;
+  }
+
+  .navbar-links button {
+    font-size: 12px;
+  }
+
   .navbar-links.active {
     display: flex;
     flex-direction: column;

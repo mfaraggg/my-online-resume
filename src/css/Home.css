@@ -88,3 +88,99 @@
   .address {
     margin-right: 25px;
   }
+
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 600px) {
+  .content-with-image {
+    flex-direction: row; /* Stack elements vertically on smaller screens */
+  }
+
+  .home-content {
+    padding-left: 10px;
+  }
+
+  .home-content h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .home-content .intro-text {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: left; /* Center the content horizontally */
+    text-align: left; /* Center the text within the container */
+    margin-bottom: 5px; /* Add space between the image and the text below */
+  }
+
+  .home-content h1,
+  .profile-image {
+    width: 90%; /* Make both elements responsive to the screen width */
+  }
+
+  .intro-text {
+    width: 110%; /* Ensure the intro text takes up the full width */
+  }
+
+  .contact-info {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #444;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .logos {
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  .logos .logoIn {
+    width: 70px;
+    height: auto;
+    margin-bottom: 5px;
+    margin-right: 10px;
+  }
+  
+  .logos .logoGit {
+    width: 100px;
+    height: auto;
+    margin-left: 15px;
+    margin-top: 4px;
+  }
+  
+  .logo {
+    width: 60px;
+    height: auto;
+  }
+  
+  .vertical-line {
+    height: 40px;
+    width: 1px;
+    background-color: #000000; 
+    margin-bottom: 10px;
+  }
+  
+  .bold-text {
+    font-weight: bold;
+  }
+  
+  .phone {
+    margin-right: 15px;
+  }
+  
+  .email {
+    margin-right: 22px;
+  }
+  
+  .address {
+    margin-right: 0px;
+  }
+}

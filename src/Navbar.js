@@ -30,7 +30,7 @@ const Navbar = () => {
           <button onClick={() => scrollToSection('extracurriculars')}>Extracurriculars</button>
         </div>
         <button className="navbar-dropdown-toggle" onClick={toggleDropdown}>
-          ☰
+          {isDropdownActive ? '✕' : '☰'}
         </button>
       </div>
     </nav>
