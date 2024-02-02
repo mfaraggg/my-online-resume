@@ -11,7 +11,7 @@ const About = () => {
     <section id="education" className="about-section">
       <div className="about-header">
         <h1>Education.</h1>
-        <p className="about-text">The schools that have shaped and outlined my success</p>
+        <p className="about-text">The schools that have shaped and outlined my success.</p>
       </div>
       <div className="about-content">
         <div className="content-item">

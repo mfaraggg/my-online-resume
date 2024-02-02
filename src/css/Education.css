@@ -64,3 +64,46 @@
     margin-bottom: 10px;
     margin-left: 25px;
   }
+
+  @media only screen and (max-width: 600px) {
+    .about-section {
+      margin: auto 10px;
+
+    }
+  
+    .about-header {
+      margin-bottom: 20px;
+    }
+  
+    .about-header h1 {
+      font-size: 24px;
+    }
+
+    .content-text h2 {
+      font-size: 16px;
+    }
+    .content-text2 h2 {
+      font-size: 16px;
+    }
+  
+    .about-header p {
+      font-size: 14px;
+    }
+  
+    .content-item {
+      flex-direction: row;
+    }
+  
+    .content-text,
+    .content-text2 {
+      margin-left: 0;
+    }
+  
+    .content-image,
+    .content-image2 {
+      margin-right: 40px;
+    }
+    .content-image2 {
+      margin-right: 50px;
+    }
+  }

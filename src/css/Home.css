@@ -145,7 +145,7 @@
   .contact-info {
     width: 1000%;
     margin-top: 20px;
-    font-size: 14px;
+    font-size: 12px;
     color: #444;
     font-family: 'Poppins', sans-serif;
   }
@@ -200,6 +200,6 @@
   }
   
   .address {
-    margin-right: 0px;
+    margin-right: 2px;
   }
 }
