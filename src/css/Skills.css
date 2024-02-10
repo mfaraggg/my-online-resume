@@ -4,8 +4,6 @@
   padding-left: 150px;
   padding-right: 150px;
   position: relative; 
-  border-bottom: 1px solid #66cfff;
-
 }
 
 .skills-content {
@@ -45,6 +43,7 @@
   .skills-section {
     padding-left: 10px;
     padding-right: 10px;
+    border-bottom: 1px solid #66cfff;
   }
 
   .skills-content h1 {
